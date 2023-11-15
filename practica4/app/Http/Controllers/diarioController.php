@@ -26,6 +26,6 @@ class diarioController extends Controller
             'txtRecuerdo' => 'required|max:25',
         ]); */
 
-        return redirect('/formularios')->with('confirmacion','Tu recuerdo llego al controlador');
+        
     }
 }

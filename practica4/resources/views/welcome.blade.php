@@ -1,9 +1,9 @@
-    @extends('layouts.plantilla')
+@extends('layouts.plantilla')
 
-    @section('titulo', 'Inicio')
+@section('titulo', 'Inicio')
 
-    @section('contenido')
+@section('contenido')
 
-    <h1 class="display-1 text-center text-danger">HOME</h1>
+<h1 class="display-1 text-center text-danger">HOME</h1>
 
-    @endsection
+@endsection

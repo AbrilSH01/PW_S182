@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ComicsController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [ComicsController::class, 'metodoInicio'])->name('Inicio');
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post('/guardarComic', [ComicsController::class, 'metodoGuardar'])->name('Guardar');
