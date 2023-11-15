@@ -7,10 +7,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link {{ request()->routeIs('recuerdo.create')?'text-danger fw-bold':'' }}" aria-current="page" href="recuerdo/create">Recuerdos</a>
+            <a class="nav-link {{ request()->routeIs('recuerdo.create')?'text-danger fw-bold':'' }}" aria-current="page" href="/recuerdo/create">Formularios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{ request()->routeIs('Formularios')?'text-danger fw-bold':'' }}" aria-current="page" href= " ">Formularios</a>
+            <a class="nav-link {{ request()->routeIs('recuerdo.index')?'text-danger fw-bold':'' }}" aria-current="page" href= "/recuerdo">Recuerdo</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
